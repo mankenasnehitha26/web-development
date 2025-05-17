@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Photography Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h2>PhotoArt</h2>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about" class="section">
+    <h1>Welcome 👋</h1>
+    <p>Hi, I’m Snehitha—a freelance photographer capturing moments around the world. Dive into my work below!</p>
+    <img src="C:\Users\SNEHITHA\Pictures\potrait.jpg" alt="Sample Portrait" />
+  </section>
+
+  <section id="gallery" class="section">
+    <h2>Featured Shots 📸</h2>
+    <div class="grid">
+      <img src="C:\Users\SNEHITHA\Pictures\Blog+images-17.jpg" alt="Shot 1" onclick="openLightbox(this)" />
+      <img src="C:\Users\SNEHITHA\Pictures\high-resolution-nature-landscape-l.jpg"" alt="Shot 2" onclick="openLightbox(this)" />
+      <img src="C:\Users\SNEHITHA\Pictures\th.jfif" alt="Shot 3" onclick="openLightbox(this)" />
+      <img src="C:\Users\SNEHITHA\Pictures\treephoto31.jpg.crdownload" alt="Shot 4" onclick="openLightbox(this)" />
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <img id="lightbox-img" alt="Enlarged shot" />
+  </div>
+
+  <section id="contact" class="section">
+    <h2>Get in Touch 📬</h2>
+    <button onclick="sayHello()">Say Hello</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Alex’s PhotoArt | All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
