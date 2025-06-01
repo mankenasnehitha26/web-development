@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quiz App with Jokes</title>
+  <link rel="stylesheet" href="api.css" />
+</head>
+<body>
+  <h1>Interactive Quiz</h1>
+
+  <div class="carousel"></div>
+
+  <div class="main-container">
+    <!-- Quiz Section -->
+    <div id="quiz-container">
+      <h2 id="question">Question text</h2>
+      <div id="answers"></div>
+      <div class="buttons">
+        <button onclick="prevQuestion()">Previous</button>
+        <button onclick="nextQuestion()">Next</button>
+      </div>
+      <div id="score"></div>
+    </div>
+
+    <!-- Joke Section -->
+    <div id="joke-box">
+      <h2>Jokes for Fun</h2>
+      <p id="joke"></p>
+      <button onclick="getJoke()">New Joke</button>
+    </div>
+  </div>
+
+  <script src="api.js"></script>
+</body>
+</html>
