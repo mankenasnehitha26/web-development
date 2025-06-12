@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="task4.css">
+</head>
+<body>
+  <header>
+    <div class="profile">
+      <img src="images/profile.avif" alt="Profile">
+      <div>
+        <h1>Snehitha Mnakena</h1>
+        <p>📞 +91 94xxxxxxx | 📧 snehithamankena@gmail.com</p>
+      </div>
+    </div>
+    <nav>
+      <button onclick="showSection('portfolio')">Portfolio</button>
+      <button onclick="showSection('todo')">KeepNotes</button>
+      <button onclick="showSection('products')">Products</button>
+    </nav>
+  </header>
+
+  <section id="portfolio" class="content-section active">
+    <h2>📌 Career Objective</h2>
+    <p>Motivated B.Tech CSE student with strong skills in web development and a desire to build impactful digital solutions. Passionate about learning and building clean, responsive user interfaces.</p>
+
+    <h2>💻 Technical Skills</h2>
+    <ul>
+      <li>Frontend: HTML, CSS, JavaScript, Bootstrap, Tailwind</li>
+      <li>Backend: Node.js, Express.js</li>
+      <li>Database: MongoDB, MySQL</li>
+      <li>Tools: GitHub, VS Code, Canva</li>
+    </ul>
+
+    <h2>🚀 Projects</h2>
+    <ul>
+      <li>Quiz App with Jokes and Image Carousel</li>
+      <li>Unique gaming event with React and Node</li>
+      <li>Interactive quiz application with Python</li>
+    </ul>
+
+    <h2>🏆 Achievements</h2>
+    <ul>
+      <li>Organized and hosted a Tech Treasure Hunt event at college fest.</li>
+      <li>Volunteered as Event Coordinator in the IoT & CSE-themed symposium 2025.</li>
+      <li>Content writer and designer for college coding club newsletter.</li>
+      <li>Completed "Responsive Web Design" certification by freeCodeCamp.</li>
+      <li>Earned HTML, CSS, and JavaScript badges from HackerRank / Sololearn.</li>
+      <li>Achieved a score of 90%+ in Web Development internal lab assessments.</li>
+    </ul>
+
+    <h2>💡 Interests</h2>
+    <p>UI/UX design, exploring new tech, mentoring juniors, and writing tech blogs.</p>
+  </section>
+
+  <section id="todo" class="content-section">
+    <h2>📝 KeepNotes - To Do List</h2>
+    <input type="text" id="taskInput" placeholder="Add a new task">
+    <button onclick="addTask()">Add Task</button>
+    <ul id="taskList"></ul>
+  </section>
+
+  <section id="products" class="content-section">
+    <h2>🛒 Product Showcase</h2>
+    <!-- The filter dropdown will be injected by JS -->
+    <div class="products"></div>
+  </section>
+
+  <script src="task4.js"></script>
+</body>
+</html>
